@@ -51,7 +51,7 @@ localrepos <- file.path("file:", normalizePath(repodir))
 available.packages(type="source", repos=localrepos)[,c("Package","Repository","File")]
 available.packages(type="win.binary", repos=localrepos)[,c("Package","Repository","File")]
 
-unlink(repodir)
+unlink(repodir, recursive=TRUE)
 
 }
 }

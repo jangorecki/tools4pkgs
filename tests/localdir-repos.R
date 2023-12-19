@@ -139,6 +139,6 @@ stopifnot(
 # a matter of switch to contriburl at start of install.packages/update.packages?
 # switch using contrib.url() for cran and localcran, as is for localdir
 
-unlink(td)
+unlink(td, recursive=TRUE)
 options(.op)
 if (!interactive()) q("no")
