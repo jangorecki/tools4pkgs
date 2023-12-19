@@ -1,3 +1,8 @@
+if (!requireNamespace("Matrix", quietly=TRUE)) {
+    cat("Matrix package not available, skip tests")
+    q("no")
+}
+
 .op = options("repos" = c("CRAN" = "https://cloud.r-project.org"))
 
 require("tools4pkgs")
@@ -16,7 +21,7 @@ stopifnot(as.logical(length(pkgs)))
 
 ## we can use any DESCRIPTION file, from pkgs sources, libraries, or even unrelated ones
 
-dcfs <- sapply(c("MASS","lattice"), function(p) system.file("DESCRIPTION", package=p))
+dcfs <- sapply(c("Matrix","lattice"), function(p) system.file("DESCRIPTION", package=p))
 
 pkgs <- packages.dcf(dcfs, which = "all") # take also Suggests and Enhances
 repos <- c(getOption("repos"), repos.dcf(dcfs))
