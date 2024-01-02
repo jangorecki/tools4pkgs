@@ -1,9 +1,9 @@
 Package: tools4pkgs
-Version: 0.2.0
+Version: 0.2.2
 Title: Tools for Package Administration
 Author: Jan Gorecki <j.gorecki@wit.edu.pl>
 Maintainer: Jan Gorecki <j.gorecki@wit.edu.pl>
-Description: Tools for package administrationn.
+Description: Provides functions to ease administration tasks around packages development and distribution.
 License: GPL-2 | GPL-3
 Imports: tools, utils
 Suggests: Matrix

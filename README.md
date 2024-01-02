@@ -1,6 +1,12 @@
 # tools4pkgs
 
-This is a code taken out from base R branch [tools4pkgs](https://svn.r-project.org/R/branches/tools4pkgs/). It provides functions to ease administration tasks around packages development.
+This is a code taken out from base R branch [tools4pkgs](https://svn.r-project.org/R/branches/tools4pkgs/). It provides functions to ease administration tasks around packages development and distribution.
+
+Example use cases:
+- mirroring subset of CRAN into local environment: `mirror.packages()`
+- freezing up R packages version for reproducible environment: `mirror.packages()`
+- extracting package dependencies from DESCRIPTION file: `packages.dcf()`
+- mixing use of private R repositories together with CRAN repositories: `repos.dcf()`
 
 ## Installation
 
