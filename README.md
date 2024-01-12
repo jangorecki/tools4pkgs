@@ -44,7 +44,7 @@ available.packages(repos = file.path("file:", normalizePath(repodir)))
 #...
 ```
 
-Descrition of all available features can be found in package manual
+Description of all available features can be found in [package manual](https://jangorecki.github.io/tools4pkgs)
 ```r
 library(tools4pkgs)
 ?tools4pkgs
